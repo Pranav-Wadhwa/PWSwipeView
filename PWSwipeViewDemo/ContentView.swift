@@ -14,7 +14,7 @@ struct ContentView: View {
     var viewControllers = [UIViewController]()
     
     @State var currentPage = 0
-    @State var continuousPaging = true
+    let continuousPaging = true
     
     init() {
         let subviews = [
