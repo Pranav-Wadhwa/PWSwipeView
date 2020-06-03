@@ -16,6 +16,7 @@
 		BFB1A41E248741C800428902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB1A41D248741C800428902 /* Assets.xcassets */; };
 		BFB1A421248741C800428902 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB1A420248741C800428902 /* Preview Assets.xcassets */; };
 		BFB1A424248741C800428902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB1A422248741C800428902 /* LaunchScreen.storyboard */; };
+		BFB1A42A2487ED2D00428902 /* PWSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1A4292487ED2D00428902 /* PWSwipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		BFB1A420248741C800428902 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFB1A423248741C800428902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB1A425248741C800428902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB1A4292487ED2D00428902 /* PWSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSwipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				BFB1A3FA248741A100428902 /* PWSwipeView.h */,
 				BFB1A3FB248741A100428902 /* Info.plist */,
+				BFB1A4292487ED2D00428902 /* PWSwipeView.swift */,
 			);
 			path = PWSwipeView;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				TargetAttributes = {
 					BFB1A3F6248741A100428902 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					BFB1A3FF248741A100428902 = {
 						CreatedOnToolsVersion = 11.5;
@@ -271,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB1A42A2487ED2D00428902 /* PWSwipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		BFB1A40C248741A200428902 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pranavwadhwa.PWSwipeView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		BFB1A40D248741A200428902 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -483,6 +491,7 @@
 		BFB1A40F248741A200428902 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PWSwipeViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		BFB1A410248741A200428902 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PWSwipeViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
